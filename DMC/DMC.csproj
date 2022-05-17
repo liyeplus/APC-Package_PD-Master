@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4229DADD-1C47-479B-B198-9DD21403C621}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DMC</RootNamespace>
+    <AssemblyName>PD-Master</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>11.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="csharp_matlab, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\csharp_matlab.dll</HintPath>
+    </Reference>
+    <Reference Include="Matrix, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Matrix.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray, Version=2.18.0.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcDaNet">
+      <HintPath>bin\Debug\OpcDaNet.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlgorithmQP.cs" />
+    <Compile Include="ComplexF.cs" />
+    <Compile Include="CSTRAlgorithm.cs" />
+    <Compile Include="DMCAlgorithm.cs" />
+    <Compile Include="DMCtoOPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCtoOPC.Designer.cs">
+      <DependentUpon>DMCtoOPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOPC.Designer.cs">
+      <DependentUpon>FrmOPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGstods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGstods.Designer.cs">
+      <DependentUpon>FrmGstods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLimit.Designer.cs">
+      <DependentUpon>FrmLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPropriety.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPropriety.Designer.cs">
+      <DependentUpon>FrmPropriety.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetDisturb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetDisturb.Designer.cs">
+      <DependentUpon>FrmSetDisturb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPoint.Designer.cs">
+      <DependentUpon>FrmSetPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSimulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSimulate.Designer.cs">
+      <DependentUpon>FrmSimulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInit.Designer.cs">
+      <DependentUpon>FrmInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatrix.Designer.cs">
+      <DependentUpon>FrmMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStepresponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStepresponse.Designer.cs">
+      <DependentUpon>FrmStepresponse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemReadWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemReadWrite.designer.cs">
+      <DependentUpon>ItemReadWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerConnect.Designer.cs">
+      <DependentUpon>ServerConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="softcal.cs" />
+    <Compile Include="WriteTxt.cs" />
+    <EmbeddedResource Include="DMCtoOPC.resx">
+      <DependentUpon>DMCtoOPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOPC.resx">
+      <DependentUpon>FrmOPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGstods.resx">
+      <DependentUpon>FrmGstods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLimit.resx">
+      <DependentUpon>FrmLimit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPropriety.resx">
+      <DependentUpon>FrmPropriety.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetDisturb.resx">
+      <DependentUpon>FrmSetDisturb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPoint.resx">
+      <DependentUpon>FrmSetPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSimulate.resx">
+      <DependentUpon>FrmSimulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInit.resx">
+      <DependentUpon>FrmInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrix.resx">
+      <DependentUpon>FrmMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStepresponse.resx">
+      <DependentUpon>FrmStepresponse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemReadWrite.resx">
+      <DependentUpon>ItemReadWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ServerConnect.resx">
+      <DependentUpon>ServerConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="11.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DMC.AlgorithmQP" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACEgAAAAAAAAAAAAAIAAAAAAAAEAE=</HashCode>
+      <FileName>AlgorithmQP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.ComplexF" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAACAAABAAA4AUCgCAAAAAAAAAAIAAhAAAAAQA=</HashCode>
+      <FileName>ComplexF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.CSTRAlgorithm" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAADAAAAAAAUAAACAAAAAAAAAAAAAAJgAAAAQAA=</HashCode>
+      <FileName>CSTRAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.DMCAlgorithm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UBQUWSwGgghADCIAAI6BJABKQYAGrCCEA4JgrXfiDTw=</HashCode>
+      <FileName>DMCAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.DMCtoOPC" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACACABAiAgoBQSAAKAABC+QwAKAAAAEGAANIACMQA=</HashCode>
+      <FileName>DMCtoOPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FormInitXGJF" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAIACAgAAAAACCIEIACgBYCAAAAQAAAQJAIAAA=</HashCode>
+      <FileName>FormInitXGJF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmCIMoffline" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQwQAApACARkAAQCACAMCACSCEBkAAIYCAFAAjAQAA=</HashCode>
+      <FileName>FrmCIMoffline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmInit" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8LaFCWAAQiooShEHABaBUUAqAQEELACQAmkB5FdAGSA=</HashCode>
+      <FileName>FrmInit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmLimit" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAACAAACAIAEAGgAKBQACCAAAIIACAEGEAAEIBEQA=</HashCode>
+      <FileName>FrmLimit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmMain" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>haSgQCcxoyIOwABwIkKbE2D+CxlPZAlLFpCBgMBBY5A=</HashCode>
+      <FileName>FrmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmMatrix" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACCBgACBgAIAAAAKAAAICABgIAgEgAEBhkAAAAAA=</HashCode>
+      <FileName>FrmMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmOPC" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAABAADAgiBAAAECJQIQDAhAIAAASAgIBIJAEBAI=</HashCode>
+      <FileName>FrmOPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmPropriety" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAgACAQABAAAASAgKACAQACACAAAACAAAAoAAU=</HashCode>
+      <FileName>FrmPropriety.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmSetDisturb" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAAAEAAgACBAACCAAAIAAgAEAABAAABAAA=</HashCode>
+      <FileName>FrmSetDisturb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmSetPoint" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAiAAAkAAgACQAACCAAAIAAAAEEABAAABAAA=</HashCode>
+      <FileName>FrmSetPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.FrmSimulate" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJQMSUEAYCoISpEBAASBAEAKAAAAAAAAAAJh5CVCaAA=</HashCode>
+      <FileName>FrmSimulate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.ItemRW" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAAACAAAFAAAACAAIAjgEYACmACACAEQgIREgA=</HashCode>
+      <FileName>ItemRW.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.Program" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.ProgressBar" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAAAAAAAACAAAACAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ProgressBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.SplashScreen1" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAIACAAAAAAkABAgAAAAAAAA=</HashCode>
+      <FileName>SplashScreen1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.XGJFAlgorithm" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NAAAQmAMAiABSiAABBIAIAACgCAiEBAAsBEoEBRIIEA=</HashCode>
+      <FileName>XGJFAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.XtraUserControl1" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XtraUserControl1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMC.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="DMC.AME" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIEAAACBAAAAEAgAABAIAAAAAAEgAAAAgAAApgEAQAA=</HashCode>
+      <FileName>XGJFAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
